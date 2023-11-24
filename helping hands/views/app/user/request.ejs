@@ -1,0 +1,92 @@
+<%- include("../../header") -%>
+
+    <link rel="stylesheet" href="/stylesheets/app/request.css">
+    <div class="d-flex justify-content-center">
+        <h5>User Request Form</h5>
+    </div>
+    <div class="d-flex justify-content-center card-container">
+        <form class="col-12 col-md-6 justify-content-center form-container" id="request-form">
+            <div class="mb-3 question">
+                <label for="requirement1" class="form-label">
+                    Choose an Option
+                </label>
+                <select class="custom-select" id="requirement1" name="requirement1">
+                    <option selected>Open this select menu</option>
+                    <option value="Donated Items">Donated Items</option>
+                    <option value="Shopping">Shopping</option>
+                </select>
+            </div>
+            <div class="mb-3 question">
+                <label for="category" class="form-label">
+                    Category<!-- name and value-->
+                </label>
+                <select class="custom-select" id="category" name="category"> <!-- name and value-->
+                    <option selected>Open this select menu</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Grocery">Grocery</option>
+                    <option value="Gadgets">Gadgets</option>
+                </select>
+            </div>
+            <div class="mb-3 question">
+                <label for="requirement2" class="form-label">
+                    Choose an item
+                </label>
+                <select class="custom-select" id="requirement2" name="requirement2">
+                    <option selected>Open this select menu</option>
+                    <option value="Blue Printed shirt for mens">Blue Printed shirt for mens</option>
+                    <option value="White formal shirt">White formal shirt</option>
+                    <option value="Blue jeans">Blue jeans</option>
+                    <option value="Black jeans">Black jeans</option>
+                    <option value="Frocks">Frocks</option>
+                    <option value="Crop top for girls">Crop top for girls</option>
+                    <option value="Saree">Saree</option>
+                    <option value="Mini Shirt">Mini Shirt</option>
+                    <option value="Mini Skirt">Mini Skirt</option>
+                    <option value="Refurbished laptop">Refurbished laptop</option>
+                    <option value="Refurbished Phone">Refurbished Phone</option>
+                    <option value="Calculator">Calculator</option>
+                </select>
+                <div class="mb-3 question">
+                    <label for="Enter your Adhaar Number" class="form-label">
+                        Enter your Adhaar Number<!-- name and value-->
+                    </label>
+                        <input type="text" name="adhaarNumber" class="adhaarNumber" placeholder="adhaarNumber">
+                    </select>
+                </div> 
+                
+             <!-- </div>
+            <div class="mb-3 question">
+                <label for="time" class="form-label">
+                    Choose the time for drop or recieve item
+                </label>
+                <select class="custom-select" name="time">
+                    <option selected>Open this select menu</option>
+                    <% for (var i=7; i<11; i++) { %>
+                        <option value="<%= [i+1] %>:00am">
+                            <%= [i+1] %>:00am
+                        </option>
+                        <% } %>
+                            <% for (var i=1; i<12; i++) { %>
+                                <option value="<%= [i+1] %>:00pm">
+                                    <%= [i+1] %>:00pm
+                                </option>
+                                <% } %>
+                </select>
+            </div>  -->
+            <!-- <div class="mb-3 question">
+                <label for="fare" class="form-label">
+                    Please enter fare (in rupees) for the above choice
+                </label>
+                <input type="number" name="fare" class="form-control" placeholder="Fare">
+            </div> -->
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="/javascript/app/user/request.js"></script>
+
+<%- include("../../footer") -%>
